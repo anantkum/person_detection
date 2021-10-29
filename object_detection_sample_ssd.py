@@ -39,7 +39,7 @@ def parse_args() -> argparse.Namespace:
 def main():  # noqa
     print("start app.....")
     #log.basicConfig(format='[ %(levelname)s ] %(message)s', level=log.INFO, stream=sys.stdout)
-    log.basicConfig(format='[ %(levelname)s ] %(message)s', level=log.INFO, filename='pd.log', filemode='a')
+    log.basicConfig(format='[ %(levelname)s ] %(message)s', level=log.INFO, filename='/mount/openvino/pd.log', filemode='a')
     args = parse_args()
 
     # ---------------------------Step 1. Initialize inference engine core--------------------------------------------------
