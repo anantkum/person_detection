@@ -2,15 +2,15 @@
 FROM openvino/ubuntu18_dev
 
 # copy files includes object_detection script, IR file, src image
-ADD object_detection_sample_ssd.py /home/openvino/
-ADD person-detection-0200.xml /home/openvino/
-ADD person-detection-0200.bin /home/openvino/
-ADD person.png /home/openvino/
-ADD script.sh /home/openvino/
+ADD object_detection_sample_ssd.py /home
+ADD person-detection-0200.xml /home
+ADD person-detection-0200.bin /home
+ADD person.png /home
+ADD script.sh /home
 
 
 # cd working directory
-WORKDIR /home/openvino/
+WORKDIR /home
 
 
 # Run the app
